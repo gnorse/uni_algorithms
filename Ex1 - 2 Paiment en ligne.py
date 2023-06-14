@@ -1,0 +1,10 @@
+duree = int(input("input the duration in seconds"))
+months = int(duree / (60*60*24*30))
+duree2 = duree % (60*60*24*30)
+days = int(duree2 / (60*60*24))
+duree3 = duree2 % (60*60*24)
+hours = int(duree3 / (60*60))
+duree4 = duree3 % (60*60)
+minutes = int(duree4 / 60)
+seconds = duree4 % 60
+print(str(months) + " months, " + str(days) + " days, " + str(hours) + " hours, " + str(minutes) + " minutes, " + str(seconds) + " seconds, ")
